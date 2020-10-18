@@ -1,0 +1,72 @@
+.top{
+padding-left: 50px;
+}
+body{
+	background-image: linear-gradient(blue,green);
+}
+.column{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	
+		float:left;
+		width: 25%;
+		/*padding:50px 10px;*/
+		padding:35px; 
+	margin-left:30px;
+
+
+}
+.centered{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color:yellow;
+	font-style:comicsans;
+	font-size: 35px;
+	color:yellow;
+	text-shadow: 2px 2px 4px yellow;
+
+}
+audio{display: none;}
+.leaf{
+	position: relative;
+
+	animation-name: example;
+	animation-duration: 15s ;
+	animation-delay: 15s;
+	animation-iteration-count: infinite; 
+}
+.leaf1{
+	position: relative;
+
+	animation-name: example;
+	animation-duration: 15s ;
+	animation-delay: 15s;
+	animation-iteration-count: infinite; 
+	animation-direction: alternate-reverse;
+}
+
+@keyframes example{
+0%{left:0px;top:0px;}
+25%{left:800px;top:0px;}
+50%{left:800px;top:800px;}
+75%{left:0px;top:800px;}
+100%{left:0px;top:0px;}
+}
+/*img:hover{
+	transform:scaleX(-1);
+}*/
+.bottom-right{
+	position:relative;
+	bottom:8px;
+	right:16px;
+	padding:5px;
+	text-align:center;
+	font-size: 25px;
+
+}
+.row::after{
+	content:"";
+	clear:both;
+	display:table;
+}

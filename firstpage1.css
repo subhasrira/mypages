@@ -1,0 +1,85 @@
+.header{
+	background-color: olive;
+	font-size: 30px;
+	text-align: center;
+padding-left: 50px;
+border-style:dotted;
+border-width:5px;
+text-shadow: 3px 2px;
+
+}
+.footer{
+	/*background-color: olive;*/
+	text-align: center;
+	border-style: dotted;
+}
+.line{
+	position:relative;
+animation-name: example;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+
+}
+audio{
+	display: none;
+}
+@keyframes example{
+	0%{left: 0px;top:0px;}
+	25%{left:-10px;top:0px;}
+	50%{left:-10px;top:-10px;}
+	75%{left:0px;top:-10px;}
+	100%{left:0px;top:0px;}
+}
+.bee1{
+	position: relative;
+	animation-name: example1;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+@keyframes example1{
+	0%{left:0px;top:0px;}
+	25%{left:600px;top:0px;}
+	50%{left:600px;top:600px;}
+	
+}
+
+body{
+	background-image: linear-gradient(lightgreen,green);
+
+}
+.column{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	
+		float:left;
+		width: 25%;
+		/*padding:50px 10px;*/
+		padding:35px; 
+	margin-left:30px;
+
+
+
+}
+
+	img{
+		transition: width 2s;
+		transition: height 2s;
+	}
+	/*img:hover{
+		width:1200px;
+		height:300px;
+	}*/
+
+.bottom-right{
+	position:relative;
+	bottom:8px;
+	right:16px;
+	padding:5px;
+	text-align:center;
+	font-size: 25px;
+
+}
+.row::after{
+	content:"";
+	clear:both;
+	display:table;
+}
